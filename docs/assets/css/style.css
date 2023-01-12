@@ -271,12 +271,12 @@ footer li a {
 	padding-right: 10px !important;
 	font-size: 1.5em;
 }
-.modal-body p {
+footer .modal-body p {
 	position: relative;
 	z-index: 2 !important;
 }
 
-.modal-body p::before {
+footer .modal-body p::before {
 	position: absolute;
 	content: "\201F";
 	font-size: 6em;
