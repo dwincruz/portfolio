@@ -1,9 +1,9 @@
 @font-face {
-	font-family: "Montserrat";
+	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
 }
 @font-face {
-	font-family: "Montserrat-Bold";
+	font-family: Montserrat-Bold;
 	src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
 }
 :root {
@@ -12,19 +12,19 @@
 	--light-color: #e0e0e0;
 	--white-color: #ffffff;
 }
+a,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-a,
 label,
+p,
 small,
 strong {
 	color: var(--primary-color) !important;
-	font-family: "Montserrat", sans-serif;
+	font-family: Montserrat, sans-serif;
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
@@ -43,15 +43,15 @@ input,
 textarea {
 	border: 1px solid var(--primary-color) !important;
 	color: var(--primary-color) !important;
-	border-radius: 0px !important;
+	border-radius: 0 !important;
 }
-input::placeholder,
 input::-moz-placeholder,
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+input::placeholder {
 	color: var(--light-color);
 }
-input[type="submit"]:hover {
-	box-shadow: inset 450px 0 0 0 var(--primary-color);
+input[type="submit"] {
+	background-color: var(--primary-color);
 	color: var(--white-color) !important;
 }
 button {
@@ -63,13 +63,12 @@ button:hover {
 	box-shadow: inset 200px 0 0 0 var(--primary-color);
 	color: var(--white-color) !important;
 }
-
 .button-primary {
 	border: 1px solid var(--primary-color);
-	border-radius: 0px;
+	border-radius: 0;
 }
 .text-strong {
-	font-family: "Montserrat-bold", sans-serif;
+	font-family: Montserrat-bold, sans-serif;
 }
 .icons-border {
 	border: 1px solid var(--primary-color) !important;

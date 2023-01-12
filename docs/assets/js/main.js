@@ -64,12 +64,23 @@ function webPageResponsive() {
 }
 webPageResponsive();
 
-function submitMessage() {
-	const sendMessageBtn = document.querySelector("#sendMessage");
-	sendMessageBtn.addEventListener("click", (e) => {
+function formSubmit() {
+	let userName = document.querySelector("#userName");
+	let userMail = document.querySelector("#userMail");
+	let textarea = document.querySelector("#inputTextArea");
+	const sendMessage = document.querySelector("#sendMessage");
+
+	sendMessage.addEventListener("click", (e) => {
 		e.preventDefault();
+		let usernameCredentials = /[A-Za-z0-9]/;
+		if (userName.value.match(usernameCredentials)) {
+			console.log("valid");
+		} else {
+			console.log("invalid");
+		}
 	});
 }
+formSubmit();
 function adjustTextareaRows() {
 	const textarea = document.querySelector("#inputTextArea");
 	const limit = 200;
