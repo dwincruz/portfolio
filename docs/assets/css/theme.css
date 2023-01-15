@@ -39,16 +39,21 @@ input:focus,
 textarea {
 	box-shadow: none !important;
 }
+input[type="text"] {
+	text-transform: capitalize;
+}
 input,
 textarea {
-	border: 1px solid var(--primary-color) !important;
-	color: var(--primary-color) !important;
-	border-radius: 0 !important;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	border-radius: 5px;
+	width: 100%;
+	padding: 5px;
 }
 input::-moz-placeholder,
 input::-webkit-input-placeholder,
 input::placeholder {
-	color: var(--light-color);
+	color: var(--light-color) !important;
 }
 input[type="submit"] {
 	background-color: var(--primary-color);
