@@ -249,13 +249,34 @@ h5.card-title {
 	padding-bottom: 80px;
 }
 .personal-info {
+	position: relative;
+	box-sizing: border-box;
+}
+.personal-info::before {
+	position: absolute;
+	content: "";
+	background-color: var(--secondary-color);
+	height: 50px;
+	width: 100px;
+	border-radius: 5px;
+	transform: translate(40px, -25px);
+	z-index: -1;
+	right: 0;
+}
+.personal-info::after {
+	position: absolute;
+	content: "";
 	background-color: var(--primary-color);
-	transform: rotate(7deg) !important;
-	border-radius: 20px;
+	height: 50px;
+	width: 100px;
+	border-radius: 5px;
+	transform: translate(-40px, -25px);
+	z-index: -1;
 }
 .personal-info ul {
-	transform: rotate(-7deg) !important;
-	border-radius: 20px;
+	position: relative;
+	z-index: 1;
+	border-radius: 5px;
 }
 footer {
 	background-color: rgb(249, 249, 249);
