@@ -69,6 +69,7 @@ function formSubmit() {
 	let userEmail = document.querySelector("#userEmail");
 	let textArea = document.querySelector("#inputTextArea");
 	const sendMessage = document.querySelector("#sendMessage");
+	const errMessage = document.querySelectorAll(".text-warning");
 
 	sendMessage.addEventListener("click", (e) => {
 		let status = [];
@@ -76,41 +77,41 @@ function formSubmit() {
 		let alphaNumericValidation = /^[(a-zA-Z)+.\-]$/;
 		let emailValidation = /^[\w-\.]+@([\w-]+\.)+[a-z]{2,4}$/;
 		let textAreaValidation = /(.|\s)*\S(.|\s)*/;
-
 		if (userName.value.match(alphaNumericValidation)) {
 			console.log("valid");
-			userName.style.border = "1px solid #373737";
 			status.push(true);
+			// errMessage[0].innerText = "";
 
 			console.log(status);
 		} else {
 			console.log("invalid");
-			userName.style.border = "1px solid #ffc34d";
 			status.splice(0, 0, false);
 			console.log(status);
+			// errMessage[0].innerText = "placter input alphabet characters";
 		}
 		if (userEmail.value.match(emailValidation)) {
 			console.log("valid");
-			userEmail.style.border = "1px solid #373737";
 			status.push(true);
 			console.log(status);
+			errMessage[1].innerText = "";
 		} else {
 			console.log("invalid");
-			userEmail.style.border = "1px solid #ffc34d";
 			status.splice(1, 0, false);
 			console.log(status);
+			// errMessage[1].innerText = "please input a valid email";
 		}
 		if (textArea.value.match(textAreaValidation)) {
 			console.log("valid");
-			userEmail.style.border = "1px solid #373737";
 			status.push(true);
 			console.log(status);
+			errMessage[2].innerText = "";
 		} else {
 			console.log("invalid");
-			textArea.style.border = "1px solid #ffc34d";
 			status.splice(2, 0, false);
 			console.log(status);
+			// errMessage[2].innerText = "please input your message";
 		}
+
 		const passCredentials = status.filter((trueValue) => trueValue).length;
 		console.log(passCredentials);
 		console.log("number" + status.length);
