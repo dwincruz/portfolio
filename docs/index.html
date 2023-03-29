@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Dwin Cruz" />
+		<link rel="icon" href="assets/images/favicon.png" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/mediaQueries.css" />
+		<link rel="stylesheet" href="assets/css/animation.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="assets/icons/all.css" />
+		<title>Dwin UI</title>
+	</head>
+	<body>
+		<div class="navigation-container position-fixed w-100">
+			<nav class="navbar navbar-expand-sm bg-body-tertiary px-5 py-3">
+				<div class="container-fluid gap-3">
+					<a class="nav-item" href="#"
+						><img
+							class="img-logo img img-fluid"
+							src="assets/images/Officiallogo.png"
+					/></a>
+					<button
+						class="navbar-toggler border-0"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<div class="menu-button-container"></div>
+					</button>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarNavDropdown">
+						<ul class="navbar-nav gap-3">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#thesis">Thesis</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#skills">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<main class="container-fluid">
+			<div
+				class="row justify-content-center align-items-center landing-content">
+				<div class="col-12 huge-text">
+					<h1>INNOVATIVE.</h1>
+				</div>
+				<div class="col-lg-6 col-md-5 col-sm-5 col-9 page-content">
+					<div class="landing-text">
+						<h1>Im' Dwin</h1>
+						<h2>Front End Developer</h2>
+						<h3>A rookie that will build Web & Design UI</h3>
+						<button
+							class="btn button-primary mt-3"
+							onclick="window.open('assets/files/CRUZ.pdf')">
+							<i class="fa-light fa-file"></i> Download CV
+						</button>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-4 col-sm-4 col-9 page-content">
+					<div class="person-container">
+						<div class="person-wrapper">
+							<img
+								src="assets/images/me-removebg-preview.png"
+								class="img-person img" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center thesis-content" id="thesis">
+				<div class="col-12 page-content justify-content-center p-5">
+					<div class="header-text mt-5">
+						<h2>Food Hunt Adventure</h2>
+						<p>Educational Game</p>
+					</div>
+				</div>
+
+				<div
+					class="col-lg-5 col-md-5 col-sm-9 col-12 page-content justify-content-end p-3">
+					<img
+						src="assets/images/Mobile-game.png"
+						class="img img-fluid img-mobileapp" />
+				</div>
+
+				<div
+					class="col-lg-4 col-md-4 col-sm-9 col-9 page-content justify-content-start">
+					<div class="text-container">
+						<h1 class="text-strong">
+							Our team made a mobile game application that consist
+							of three categories to play!
+						</h1>
+
+						<button
+							class="btn button-primary mt-3"
+							data-bs-toggle="modal"
+							data-bs-target="#ingameModal">
+							<i class="fa-light fa-images"></i> In-game photos
+						</button>
+
+						<div
+							class="modal modal-lg fade"
+							id="ingameModal"
+							tabindex="-1"
+							aria-labelledby="ingameModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header border-0">
+										<h1
+											class="modal-title fs-5 text-strong"
+											id="ingameModalLabel">
+											In-game photos
+										</h1>
+										<button
+											type="button"
+											class="btn btn-light text-strong"
+											data-bs-dismiss="modal">
+											<i class="fa-light fa-xmark"></i>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div
+											class="row justify-content-start header-info">
+											<div
+												class="game-info col-lg-12 d-flex mb-3">
+												<div class="col-lg-3">
+													<h2>40+</h2>
+													<p>Foods to identify</p>
+												</div>
+
+												<div class="col-lg-3">
+													<h2>03</h2>
+													<p>Fun games to play</p>
+												</div>
+											</div>
+											<div
+												class="col-lg-12 grid-container gap-2">
+												<div class="grid-img-1">
+													<img
+														src="assets/images/storyboard/scene0.png"
+														alt="scenes.jpg"
+														class="img img-fluid w-100" />
+												</div>
+												<div class="grid-img-2">
+													<img
+														src="assets/images/storyboard/scene1.JPG"
+														alt="scenes.jpg"
+														class="img img-fluid" />
+												</div>
+												<div class="grid-img-3">
+													<img
+														src="assets/images/storyboard/scene2.jpg"
+														alt="scenes.jpg"
+														class="img img-fluid" />
+												</div>
+												<div class="grid-img-4">
+													<img
+														src="assets/images/storyboard/scene3.JPG"
+														alt="scenes.jpg"
+														class="img img-fluid" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 page-content justify-content-center">
+					<div class="header-text mt-5">
+						<h2>Web Application for Admin</h2>
+						<p>Intuitive data presentation</p>
+					</div>
+				</div>
+				<div
+					class="col-lg-9 col-md-9 col-sm-12 page-content justify-content-center">
+					<img
+						src="assets/images/web-application.png"
+						class="img img-fluid img-webapp" />
+				</div>
+
+				<div class="col-12 page-content justify-content-center">
+					<div class="header-text mt-5">
+						<h2>The Techknights</h2>
+						<p>Creators of Food Hunt Adventure</p>
+					</div>
+				</div>
+
+				<div
+					class="col-lg-5 col-md-4 col-sm-9 col-12 page-content mb-3">
+					<img
+						src="assets/images/team.jpg"
+						class="img img-fluid img-team" />
+				</div>
+
+				<div class="col-lg-4 col-md-5 col-sm-9 col-9 page-content">
+					<div class="text-container">
+						<h1 class="text-strong">
+							Top 20 semi-finalist in Accenture Tech event
+						</h1>
+						<p>
+							Particiated on "Program the Future event" that aims
+							to help the community using modern technology and
+							presented our capstone thesis.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div
+				class="row justify-content-center align-items-center skills-content"
+				id="skills">
+				<div class="col-9 skills-container justify-content-center">
+					<div class="row px-3 align-items-center">
+						<div class="col-9 pt-3">
+							<h2 class="text-white text-strong m-auto">
+								Skills to Offer
+							</h2>
+						</div>
+					</div>
+					<div class="row justify-content-center p-3">
+						<div class="col-lg-3 col-md-4 col-sm-9 mb-3">
+							<div class="card py-3 px-2">
+								<div class="card-body">
+									<span class="icons-border p-2"
+										><i class="fa-light fa-code"></i
+									></span>
+									<h5
+										class="card-title px-2 text-strong mt-4">
+										Web Development
+									</h5>
+									<p class="card-text">
+										Build static & dynamic web applications.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-9 mb-3">
+							<div class="card py-3 px-2">
+								<div class="card-body">
+									<span class="icons-border p-2"
+										><i class="fa-light fa-table-layout"></i
+									></span>
+									<h5
+										class="card-title px-2 text-strong mt-4">
+										Create Storyboard
+									</h5>
+									<p class="card-text">
+										Design system flow and user storyboard.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-9 mb-3">
+							<div class="card py-3 px-2">
+								<div class="card-body">
+									<span class="icons-border p-2"
+										><i
+											class="fa-light fa-pen-paintbrush"></i
+									></span>
+									<h5
+										class="card-title px-2 text-strong mt-4">
+										Edit Photo
+									</h5>
+									<p class="card-text">
+										Alter and redesign file images.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 page-content justify-content-center">
+					<div class="header-text mt-5">
+						<h2>Technologies & Applications</h2>
+					</div>
+				</div>
+				<div class="col-lg-10">
+					<div class="row justify-content-center tools">
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/html_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+
+								<label class="tool-name text-strong px-3"
+									>HTML5</label
+								>
+							</div>
+						</div>
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/css_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+
+								<label class="tool-name text-strong px-3"
+									>CSS3</label
+								>
+							</div>
+						</div>
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/js_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3">
+									JavaScript
+								</label>
+							</div>
+						</div>
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/bootstrap_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3">
+									Bootstrap
+								</label>
+							</div>
+						</div>
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/php_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>PHP</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/mysql_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>MySQL</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/laravel_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>Laravel</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/xampp_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>XAMPP</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/react_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>Reactjs</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/mongodb_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>MongoDB</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/git_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>GIT</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/vs_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>VS Code</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/sublime_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>Sublime</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/photoshop_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>Adobe Photoshop</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/figma_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>Figma</label
+								>
+							</div>
+						</div>
+
+						<div class="each-tool col-lg-3 col-4 mb-3">
+							<div
+								class="tool-container d-flex align-items-center p-3">
+								<img
+									src="assets/images/logos/msoffice_logo.png"
+									alt=""
+									class="img img-fluid img-tool" />
+								<label class="tool-name text-strong px-3"
+									>MS Office</label
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="row justify-content-center align-items-center contact-content"
+				id="contact">
+				<div
+					class="col-lg-4 col-md-6 col-sm-12 page-content justify-content-start">
+					<form action="" class="w-100 px-3">
+						<div class="header-text p-0">
+							<h2>Contact Me</h2>
+							<p>Let's work together</p>
+						</div>
+						<div class="px-3 custom-field mb-3">
+							<label class="form-label">Name</label>
+							<input type="text" id="userName" class="" />
+							<small class="text-warning"></small>
+						</div>
+						<div class="px-3 custom-field mb-3">
+							<label class="form-label">Email Address</label>
+							<input
+								type="email custom-field"
+								id="userEmail"
+								class="" />
+							<small class="text-warning"></small>
+						</div>
+
+						<div class="px-3 custom-field mb-3">
+							<label class="form-label">Message</label>
+							<textarea
+								class=""
+								id="inputTextArea"
+								maxlength="250"></textarea>
+							<small class="text-warning"></small>
+						</div>
+
+						<div class="px-3">
+							<label class="form-label"></label>
+							<input
+								type="submit"
+								value="send message"
+								id="sendMessage"
+								class="btn btn-dark" />
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-10">
+					<div class="px-3 py-5">
+						<div class="personal-info shadow mt-5">
+							<ul class="list-group row">
+								<li class="list-group-item border-0 p-3">
+									<i class="fa-regular fa-envelope"></i>
+									aldwinceazarcruz@gmail.com
+								</li>
+								<li class="list-group-item border-0 p-3">
+									<i class="fa-regular fa-phone"></i>
+									+639479723907
+								</li>
+								<li class="list-group-item border-0 p-3">
+									<i class="fa-regular fa-location-dot"></i>
+									resides in Quezon City
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+
+	<footer class="container-fluid p-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-md-6 col-sm-10">
+				<ul class="p-0 web-info">
+					<li>
+						<img
+							class="img-logo img-fluid img"
+							src="assets/images/Officiallogo.png" />
+					</li>
+					<li>
+						<label class="mt-2"
+							>A Front-end Developer looking for an organization
+							to learn , grow and contribute</label
+						>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-10">
+				<ul class="p-0 faqs">
+					<li>
+						<h5 class="text-strong">FAQ's</h5>
+					</li>
+					<li>
+						<a
+							href=""
+							data-bs-toggle="modal"
+							data-bs-target="#faq1Modal"
+							>Do you primarily work in design or development?</a
+						>
+					</li>
+					<li>
+						<a
+							href=""
+							data-bs-toggle="modal"
+							data-bs-target="#faq2Modal"
+							>What are your experiences?</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row justify-content-center align-items-center">
+			<hr class="col-10" />
+			<div class="col-lg-10 col-md-3 col-sm-10">
+				<ul class="p-0 d-flex justify-content-center icons">
+					<li>
+						<a
+							href="https://www.linkedin.com/in/aldwin-ceazar-cruz-03b60a256/"
+							><i class="fa-brands fa-linkedin"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://wa.link/k6zb07"
+							><i class="fa-brands fa-whatsapp"></i
+						></a>
+					</li>
+					<li>
+						<a
+							href="https://www.facebook.com/profile.php?id=100041577322228"
+							><i class="fa-brands fa-square-facebook"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/acecruz14.e/"
+							><i class="fa-brands fa-instagram"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-10">
+				<p class="text-center m-auto">
+					© 2022 All rights reserved. —
+					<strong>Design & Coded by Dwin Cruz</strong>
+				</p>
+			</div>
+		</div>
+
+		<div
+			class="modal modal-lg fade"
+			id="faq1Modal"
+			tabindex="-1"
+			aria-labelledby="ingameModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<h1
+							class="modal-title fs-5 text-strong"
+							id="ingameModalLabel">
+							Do you primarily work in design or development?
+						</h1>
+						<button
+							type="button"
+							class="btn btn-light text-strong"
+							data-bs-dismiss="modal">
+							<i class="fa-light fa-xmark"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div>
+							<p>
+								I am capable of doing both. It began with front
+								end tasks and progressed to back end tasks in
+								order to improve technical skills in web
+								development.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="modal modal-lg fade"
+			id="faq2Modal"
+			tabindex="-1"
+			aria-labelledby="ingameModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header border-0">
+						<h1
+							class="modal-title fs-5 text-strong"
+							id="ingameModalLabel">
+							What are your experiences?
+						</h1>
+						<button
+							type="button"
+							class="btn btn-light text-strong"
+							data-bs-dismiss="modal">
+							<i class="fa-light fa-xmark"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div>
+							<p>
+								I was a Web Developer during my Internship,
+								specializing in design and customization of web
+								application content. After graduating from
+								university, I looked for a job as a web
+								developer. I landed my first job as a Junior
+								Software Developer at a startup company and
+								worked there for a short time.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="assets/js/main.js"></script>
+</html>

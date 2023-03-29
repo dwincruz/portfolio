@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1100px) {
+	.text-container h1 {
+		font-size: 2.5vw !important;
+	}
+	.img-team,
+	.img-mobileapp {
+		width: 100% !important;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.text-container h1 {
+		font-size: 25px !important;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.huge-text {
+		display: none;
+	}
+	.landing-content {
+		padding-top: 150px !important;
+	}
+	.landing-content .page-content:nth-of-type(odd) {
+		order: 1;
+		justify-content: center !important;
+	}
+	.landing-content .page-content:nth-of-type(even) {
+		order: 2;
+		justify-content: center !important;
+	}
+
+	.img-person {
+		height: 46vw;
+		width: 46vw;
+	}
+	.person-wrapper::before {
+		height: 46vw;
+		width: 46vw;
+		border-radius: 35% 82% 63% 45% / 46% 58% 50% 66%;
+	}
+	.thesis-content .page-content:nth-of-type(even) {
+		justify-content: center !important;
+		margin-bottom: 30px;
+	}
+	.text-container h1 {
+		font-size: 20px !important;
+	}
+	.web-info {
+		margin-bottom: 50px !important;
+	}
+	.contact-content {
+		padding: 20px;
+	}
+}
+@media only screen and (max-width: 334px) {
+	.navbar {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+}

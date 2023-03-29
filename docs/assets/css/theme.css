@@ -1,0 +1,97 @@
+@font-face {
+	font-family: Montserrat;
+	src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: Montserrat-Bold;
+	src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+}
+:root {
+	--primary-color: #373737;
+	--secondary-color: #575c6c;
+	--light-color: #e0e0e0;
+	--white-color: #ffffff;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p,
+small,
+strong {
+	color: var(--primary-color) !important;
+	font-family: Montserrat, sans-serif;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+input:focus,
+textarea {
+	box-shadow: none !important;
+}
+input[type="text"] {
+	text-transform: capitalize;
+}
+input,
+textarea {
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	border-radius: 5px;
+	width: 100%;
+	padding: 5px;
+}
+input::-moz-placeholder,
+input::-webkit-input-placeholder,
+input::placeholder {
+	color: var(--light-color) !important;
+}
+input[type="submit"] {
+	background-color: var(--primary-color);
+	color: var(--white-color) !important;
+}
+button {
+	color: var(--primary-color);
+	max-width: 200px !important;
+	padding: 10px 15px !important;
+}
+button:hover {
+	box-shadow: inset 200px 0 0 0 var(--primary-color);
+	color: var(--white-color) !important;
+}
+.button-primary {
+	border: 1px solid var(--primary-color);
+	border-radius: 0;
+}
+.text-strong {
+	font-family: Montserrat-bold, sans-serif;
+}
+.icons-border {
+	border: 1px solid var(--primary-color) !important;
+	border-radius: 5px;
+}
+.custom-field {
+	position: relative;
+}
+.custom-field label {
+	position: absolute;
+	top: -10px;
+	left: 30px;
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.custom-field input {
+	padding: 10px;
+}
